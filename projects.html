@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lab Projects</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+  <h1>AI Bio Lab</h1>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="projects.html" class="active">Projects</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Main Container -->
+<div class="container">
+  <section class="projects-section">
+    <h2>Latest Publications</h2>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search topic (e.g., cancer)" />
+      <button id="searchBtn">Search</button>
+    </div>
+    <div id="results" class="grid" style="margin-top:20px;"></div>
+  </section>
+</div>
+
+<!-- Footer -->
+<footer>
+  © <span id="year"></span> AI Bio Lab
+</footer>
+
+<!-- Centralized JS -->
+<script src="script.js"></script>
+
+<script>
+  // Optional: link the button to search function
+  document.getElementById("searchBtn").addEventListener("click", searchPapers);
+</script>
+
+</body>
+</html>
+

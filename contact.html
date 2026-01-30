@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact the Lab</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+  <h1>AI Bio Lab</h1>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Main Container -->
+<div class="container">
+  <section class="contact-section">
+    <h2>Contact Us</h2>
+
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" rows="4" placeholder="Your Message"></textarea>
+      <label>
+        <input type="checkbox" id="newsletter" /> Subscribe to Newsletter
+      </label>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <p class="success-message" id="successMsg">Message saved locally! ✅</p>
+  </section>
+</div>
+
+<!-- Footer -->
+<footer>
+  © <span id="year"></span> AI Bio Lab
+</footer>
+
+<!-- Centralized JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
